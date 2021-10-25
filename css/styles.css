@@ -11511,3 +11511,8 @@ html {
 * {
   font-family: "Comic Sans MS" !important
 }
+
+@font-face {
+  font-family: 'Comic Sans MS';
+  src: url("comic-sans-ms/comici.ttf");
+}

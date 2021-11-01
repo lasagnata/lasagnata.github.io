@@ -11508,8 +11508,12 @@ html {
   background-color: #1a252f;
 }
 
+ul.lasagna {
+  list-style-image:url("../assets/img/lasagna-transparent.png") !important;
+}
+
 * {
-  font-family: "Comic Sans MS" !important
+  font-family: "Comic Sans MS" !important;
 }
 
 @font-face {

@@ -11526,3 +11526,7 @@ iframe {
   height: 100%;
   frameborder: 0;
 }
+
+h1{
+  text-align: center;
+}

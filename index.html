@@ -17,8 +17,8 @@
         <link href="css/styles.css" rel="stylesheet" />
         <script>
         function redirect(e) {
-            var pass = document.getElementById("password").value;
-            window.open("https://forms.gle/pjvwJBpCH62"+pass, "_blank").focus();
+            var pass = document.getElementById("password").value.toUpperCase();
+            window.open(pass+".html").focus();
         }
         </script>
     </head>
@@ -46,9 +46,22 @@
             <a href="https://logwork.com/countdown-88f9" class="countdown-timer" data-style="columns" data-timezone="Europe/Rome" data-language="it" data-textcolor="#FFFFFF" data-date="2025-12-06 20:25" data-digitscolor="#FFFFFF" data-unitscolor="#FFFFFF">Time to Lasagnata™ 2025</a>
         </header>
         <!-- Locandina -->
-        <section class="page-section portfolio" id="about">
+        <section class="page-section portfolio" id="Codice segreto">
             <div class="container d-flex flex-column">
-                <input id="secretCode" placeholder="Inserisci qui il codice segreto"><button id="enter-button">Invio</button>
+                <h1>Password</h1>
+                <p>Inserisci qui la soluzione al puzzle ricevuto via e-mail per accedere al sito della Lasagnata&TRADE;</p>
+                <input id="password" placeholder="Inserisci qui il codice segreto">
+                <button id="enter-button" onclick="redirect()" type="submit">Invio</button>
+
+                <script>
+                    const input = document.getElementById("password");
+                    input.addEventListener("keyup", function(event) {
+                        if (event.key === "Enter") {
+                            event.preventDefault();
+                            document.getElementById("enter-button").click();
+                        }
+                    });
+                </script>
             </div>
         </section>
     </body>

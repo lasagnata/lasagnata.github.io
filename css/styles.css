@@ -49,9 +49,9 @@
   --mulled-spice: 64, 8, 35;
   --pudding-brown: 24, 10, 14;
 
-  --navbar-color: 103, 180, 36;
-  --bs-secondary-rgb: 176, 32, 9;
-  --bs-primary-rgb: 176, 32, 9;
+  --navbar-color: 108, 117, 125;
+  --bs-secondary-rgb: 22, 25, 59;
+  --bs-primary-rgb: 22, 25, 59;
   --bs-success-rgb: 25, 135, 84;
   --bs-info-rgb: 13, 202, 240;
   --bs-warning-rgb: 255, 193, 7;
@@ -11510,12 +11510,12 @@ html {
 .footer {
   padding-top: 5rem;
   padding-bottom: 5rem;
-  background-color: #2c3e50;
+  background-color: rgb(22, 25, 59);
   color: #fff;
 }
 
 .copyright {
-  background-color: #1a252f;
+  background-color: rgb(22, 25, 59);
 }
 
 ul.lasagna {
